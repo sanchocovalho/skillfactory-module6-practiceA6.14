@@ -1,0 +1,88 @@
+.main,
+.game-display,
+.win-massage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-field-wrapper {
+  display: grid;
+  width: 80vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.game-field {
+  background-color: orange;
+  min-height: 10vh;
+  margin: 1px 1px 1px 1px;
+  line-height: 10vh;
+}
+
+.miss {
+  background-color: red;
+}
+
+.target {
+  background-color: green;
+  color: white;
+  font-size: 24pt;
+  text-align: center;
+}
+
+.game-title {
+  color: yellow;
+  text-align: center;
+  text-shadow: 2px 5px 8px #000;
+  -webkit-text-stroke: 1px black;
+}
+
+.rules-title {
+  color: blue;
+  text-align: center;
+}
+
+.green-color {
+  color: green;
+}
+
+.red-color {
+  color: red;
+}
+
+.rules {
+  color: blue;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rules-title::before,
+.rules::after {
+  content: '';
+  display: block;
+  width: 70vw;
+  max-width: 650px;
+  height: 2px;
+  background-color: orange;
+  margin: 10px auto 0;
+}
+
+.btn-reload-wrapper,
+.btn-ng-wrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#total-time-played {
+  color: blue;
+}
+
+#total-misses {
+  color: red;
+}
+
+#total-scores,
+#prev-scores {
+  color: orange;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/game.css">
+	<title>Практика А6.14</title>
+</head>
+<body>
+    <div class="container main">
+        <h1 class="game-title">ИГРА: 10 квадратов</h1>
+        <h4 class="rules-title">Правила Игры просты:</h4>
+        <h4 class="rules">Накликать <span class="green-color">10 зеленых квадратов</span>, не допуская <span class="red-color">промахи</span></h4>
+        <div class="game-box d-none" id="game-box">
+            <div class="game-field-wrapper">
+                <div class="game-field align-text-bottom" id="slot-11"></div>
+                <div class="game-field align-text-bottom" id="slot-12"></div>
+                <div class="game-field align-text-bottom" id="slot-13"></div>
+                <div class="game-field align-text-bottom" id="slot-14"></div>
+                <div class="game-field align-text-bottom" id="slot-15"></div>
+                <div class="game-field align-text-bottom" id="slot-16"></div>
+                <div class="game-field align-text-bottom" id="slot-21"></div>
+                <div class="game-field align-text-bottom" id="slot-22"></div>
+                <div class="game-field align-text-bottom" id="slot-23"></div>
+                <div class="game-field align-text-bottom" id="slot-24"></div>
+                <div class="game-field align-text-bottom" id="slot-25"></div>
+                <div class="game-field align-text-bottom" id="slot-26"></div>
+                <div class="game-field align-text-bottom" id="slot-31"></div>
+                <div class="game-field align-text-bottom" id="slot-32"></div>
+                <div class="game-field align-text-bottom" id="slot-33"></div>
+                <div class="game-field align-text-bottom" id="slot-34"></div>
+                <div class="game-field align-text-bottom" id="slot-35"></div>
+                <div class="game-field align-text-bottom" id="slot-36"></div>
+                <div class="game-field align-text-bottom" id="slot-41"></div>
+                <div class="game-field align-text-bottom" id="slot-42"></div>
+                <div class="game-field align-text-bottom" id="slot-43"></div>
+                <div class="game-field align-text-bottom" id="slot-44"></div>
+                <div class="game-field align-text-bottom" id="slot-45"></div>
+                <div class="game-field align-text-bottom" id="slot-46"></div>
+                <div class="game-field align-text-bottom" id="slot-51"></div>
+                <div class="game-field align-text-bottom" id="slot-52"></div>
+                <div class="game-field align-text-bottom" id="slot-53"></div>
+                <div class="game-field align-text-bottom" id="slot-54"></div>
+                <div class="game-field align-text-bottom" id="slot-55"></div>
+                <div class="game-field align-text-bottom" id="slot-56"></div>
+                <div class="game-field align-text-bottom" id="slot-61"></div>
+                <div class="game-field align-text-bottom" id="slot-62"></div>
+                <div class="game-field align-text-bottom" id="slot-63"></div>
+                <div class="game-field align-text-bottom" id="slot-64"></div>
+                <div class="game-field align-text-bottom" id="slot-65"></div>
+                <div class="game-field align-text-bottom" id="slot-66"></div>
+            </div>
+            <div class="btn-reload-wrapper">
+                <button id="button-reload" class="btn btn-primary">Играть заново</button>
+            </div>
+        </div>
+        <div id="win-message" class="d-none">
+            <h4>Вы нашли <span class="green-color">10 зелёных квадратов</span> за <span id="total-time-played"></span> секунд</h4>
+            <h4>Количество допущенных промахов: <span id="total-misses"></span></h4>
+            <h4>Количество набранных очков: <span id="total-scores"></span></h4>
+            <h4>Предыдущий лучший результат: <span id="prev-scores"></span></h4>
+        </div>
+        <div class="btn-ng-wrapper">
+            <button id="button-newgame" class="btn btn-primary">Новая Игра</button>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
